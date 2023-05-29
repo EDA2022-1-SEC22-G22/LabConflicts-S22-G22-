@@ -73,12 +73,13 @@ def loadTags(control, filename):
     return model.tagSize(catalog)
 
 
-def loadBooksTags(control, filename):
+def loadBooksTags(filename):
     """
     Carga los tags de los libros del archivo
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    btfile = cf.data_dir + filename
+    return model.addBooksTags(btfile)
 
 
 def firstBook(control):
