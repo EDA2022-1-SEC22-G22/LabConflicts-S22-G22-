@@ -119,7 +119,7 @@ if __name__ == "__main__":
             print('Primer libro cargado: ' + str(lt.firstElement(books)))
             # TODO: Mods de Est-1 en el Lab 2
             first = None
-
+            print('Último libro cargado: ' + str(lt.lastElement(books)))
             # TODO: Mods de Est-2 en el Lab 2
             last = None
 
@@ -129,8 +129,10 @@ if __name__ == "__main__":
             print("Total de tags cargados: " + str(tags) + "\n")
 
         elif int(inputs[0]) == 3:
-            # TODO: Mods de Est-3 en el Lab 2
-            pass
+            print("Cargando información de Book-Tags...")
+            booktags = loadBooksTags()
+            print('Total de Book-Tags cargados: ' + str(lt.size(booktags)))
+
 
         elif int(inputs[0]) == 0:
             working = False
