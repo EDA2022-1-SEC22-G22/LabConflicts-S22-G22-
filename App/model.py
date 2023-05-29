@@ -105,12 +105,14 @@ def createBookTagList(catalog):
     pass
 
 
-def addBookTag(catalog, booktag):
+def addBookTag(booktagsfile):
     """
     Esta funcion agrega un elemento a lista de booktags.
     """
     # TODO: Mods de Est-1, Est-2 y Est-3 en el Lab 2
-    pass
+    booktags = lt.newList(datastructure='SINGLE_LINKED',
+                            filename=booktagsfile)
+    return booktags
 
 
 # Funciones de consulta

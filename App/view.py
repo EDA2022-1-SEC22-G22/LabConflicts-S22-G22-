@@ -27,7 +27,7 @@ import config as cf
 import sys
 import controller
 assert cf
-
+from DISClib.ADT import list as lt
 
 """
 La vista se encarga de la interacción con el usuario
@@ -79,7 +79,7 @@ def loadBooksTags(control):
     Cargar los Tags de libros
     """
     # TODO: Mods de Est-1 en el Lab 2
-    pass
+    return controller.loadBooks('GoodReads/book_tags-small.csv')
 
 
 def firstBook(control):
@@ -116,7 +116,7 @@ if __name__ == "__main__":
             print("Cargando información de libros....")
             books = loadBooks(control)
             print("Total de libros cargados: " + str(books) + "\n")
-
+            print('Primer libro cargado: ' + str(lt.firstElement(books)))
             # TODO: Mods de Est-1 en el Lab 2
             first = None
 
